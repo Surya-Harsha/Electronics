@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <title>Welcome to Product Administration</title>
+</head>
+<body>
+    <h1>Welcome to product management section</h1>
+    <div class="selection">
+        <button class="btn" onclick="displaptops()">Laptop&#8628;</button>
+        <button class="btn" onclick="displaykeyboards()">Keyboard&#8628;</button>
+        <button class="btn" onclick="displaymouse()">Mouse&#8628;</button>
+    </div>
+    <div class="laptop"  id="laptop" >
+        <button class="btn" style="display: inline-block;" onclick="displaydell()">DELL&#8628;</button>
+        <button class="btn" style="display: inline-block;" onclick="displayhp()">HP&#8628;</button>
+        <button class="btn" style="display: inline-block;" onclick="displaylenovo()">LENOVO&#8628;</button>
+    </div>
+    <div class="keyboard" id="keyboard">
+            <div class="stock">
+                <img class="key-images" src="key-hp.jpg">
+                <p>HP 100 Wired USB Keyboard with Full Range of 107 Keys, 12 Working Function Keys, and 3 Hotkeys / 3 Years Warranty(2UN30AA)</p>
+            </div>
+            <div class="stock">
+                <img class="key-images" src="key-rpm.jpg">
+                <p>RPM Euro Games Gaming Keyboard Wired 7 Color LED Illuminated & Spill Proof Keys, Black, Medium</p>
+            </div>
+            <div class="stock">
+                <img class="key-images" src="key-zebronics.jpg">
+                <p>Zebronics ZEB-KM2100 Multimedia USB Keyboard Comes with 114 Keys Including 12 Dedicated Multimedia Keys & with Rupee Key</p>
+            </div>
+    </div>
+    <div class="mouse" id="mouse">
+        <div class="stock">
+            <img class="mouse-images" src="mouse1.jpg">
+            <p>HP 100- 1600 DPI USB Wired Mouse, Ambidextrous Design, 3 Buttons and Built-in Scrolling / 3 Years Warranty (6VY96AA)</p>            
+            <button onclick="increasestock()">+</button>
+            <form class="f1" action="validate_admin.php" method="POST">
+                <input id="noofstock" name="mouse1" rows="1"></input>
+                <input type="submit" value="submit">
+            </form>
+        </div>
+        <div class="stock">
+            <img class="mouse-images" src="mouse2.jpg">
+            <p>Dell MS116 1000DPI USB Wired Optical Mouse</p>
+        </div>
+        <div class="stock">
+            <img class="mouse-images" src="mouse3.jpg">
+            <p>Logitech M221 Wireless Mouse, Silent Buttons, 2.4 GHz with USB Mini Receiver, 1000 DPI Optical Tracking, 18-Month Battery Life, Ambidextrous PC/Mac/Laptop - Charcoal Grey</p>
+        </div>
+    </div>
+ 
+<!--- DIVSION THAT DISPLAYS LAPTOPS-->    
+    <div class="laptop-disp" id="dell">
+        <div class="stock">
+            <img class="images" src="dell1.jpg">
+            <p>Dell New Vostro 3400 Laptop, Intel i5-1135G7, Win11 + Office'21, 8GB GDDR4, 512GB SSD, 14" (35.56Cms) FHD AG, Accent Black (D552256WIN9B, 1.59Kgs)</p>
+        </div>
+        <div class="stock">
+            <img class="images" src="dell2.jpg">
+            <p>Dell New Vostro 3400 Laptop, Intel i5-1135G7, Win11 + Office'21, 8GB GDDR4, 512GB SSD, 14" (35.56Cms) FHD AG, Accent Black (D552256WIN9B, 1.59Kgs)</p>
+       </div>
+       <div class="stock">
+            <img class="images" src="dell3.jpg">
+            <p>Dell New Vostro 3400 Laptop, Intel i5-1135G7, Win11 + Office'21, 8GB GDDR4, 512GB SSD, 14" (35.56Cms) FHD AG, Accent Black (D552256WIN9B, 1.59Kgs)</p>
+       </div>        
+    </div>
+    <div class="laptop-disp" id="hp">
+        <div class="stock">
+            <img class="images" src="hp1.jpg">
+            <p>HP 14s 11th Gen Intel Core i3- 8GB RAM/256GB SSD 14 inch(35.6cm) FHD,Micro-Edge,Anti-Glare,IPS Display/UHD Graphics/ Win 11/ MS Office/ Alexa Built-in/ 1.46kg/ Natural Silver - 14s-dy2506TU</p>
+        </div>
+        <div class="stock">
+            <img class="images" src="hp2.jpg">
+            <p>HP 15s, 11th Gen Intel Core i3, 8GB RAM/512GB SSD 15-inch(39.6 cm) FHD, Micro-Edge, Anti-Glare Display/Alexa Built-in/Win 11/UHD Graphics/Dual Speakers/ MS Office, 15s- fq2627tu, Jet Black</p>
+       </div>
+       <div class="stock">
+            <img class="images" src="hp3.jpg">
+            <p>HP 247 G8 Laptop (Athlon P-3045B HD/ 14" HD (35.56 cms) /8GB RAM DDR4 /1TB HDD / W11 SL)One Year Warranty, Black, 67U77PA)</p>
+       </div>        
+    </div>
+    <div class="laptop-disp" id="lenovo">
+        <div class="stock">
+            <img class="images" src="lenovo1.jpg">
+            <p>Lenovo ThinkBook 15 Intel 11th Gen Core i7 15.6"(39.62 cm)FHD Thin and Light Laptop (16GB/512GB SSD/Windows 11 Home/MS Office H&S 2021/Iris® Xe Graphics/Backlit/Mineral Grey/1.7 Kg) 20VE00W4IH</p>
+        </div>
+        <div class="stock">
+            <img class="images" src="lenovo2.jpg">
+            <p>Lenovo E41-55 AMD 14-inch (35.56cm) HD Thin and Light Laptop (AMD Athlon Pro 3045B / 4GB RAM/ 1TB HDD/Windows 10 /Integrated AMD Radeon Graphics/Iron Grey/ 1.59 kg), 82FJ00ABIH</p>
+       </div>
+       <div class="stock">
+            <img class="images" src="lenovo3.jpg">
+            <p>Lenovo IdeaPad 3 Intel Celeron N4020 14'' HD Thin & Light Laptop (4GB/256GB SSD/Windows 11/MS Office 2021/Platinum Grey/1.5Kg), 81WH007KIN</p>
+       </div>        
+    </div>
+<!--- END OF LAPTOP DIVISION--> 
+
+<!---JAVASCRIPT STARTS-->
+    <script>
+        function displaptops()
+        {
+            let x=document.getElementById('laptop');
+            x.style.display='block';
+            if(document.getElementById("keyboard").style.display=='block')
+            {
+            document.getElementById("keyboard").style.display='none';
+            }
+            if(document.getElementById("mouse").style.display='block')
+            {
+            document.getElementById("mouse").style.display='none';
+            }
+        }
+        function displaydell()
+        {
+            if(document.getElementById('lenovo').style.display='block')
+            {
+                document.getElementById('lenovo').style.display='none';
+                document.getElementById('dell').style.display='block';
+            }
+            if(document.getElementById('hp').style.display='block')
+            {
+                document.getElementById('hp').style.display='none';
+                document.getElementById('dell').style.display='block';
+            }
+        }
+        function displayhp()
+        {
+            if(document.getElementById('lenovo').style.display='block')
+            {
+                document.getElementById('lenovo').style.display='none';
+                document.getElementById('hp').style.display='block';
+            }
+            if(document.getElementById('dell').style.display='block')
+            {
+                document.getElementById('dell').style.display='none';
+                document.getElementById('hp').style.display='block';
+            }
+        }
+        function displaylenovo()
+        {
+            if(document.getElementById('hp').style.display='block')
+            {
+                document.getElementById('hp').style.display='none';
+                document.getElementById('lenovo').style.display='block';
+            }
+            if(document.getElementById('dell').style.display='block')
+            {
+                document.getElementById('dell').style.display='none';
+                document.getElementById('lenovo').style.display='block';
+            }
+        }
+        function displaykeyboards()
+        {
+            document.getElementById('keyboard').style.display='block';
+            let laptop=document.getElementsByClassName('laptop-disp');
+            for(let i=0;i<laptop.length;i++)
+            {
+                laptop[i].style.display='none';
+            }
+             document.getElementById('laptop').style.display='none';
+            document.getElementById('mouse').style.display='none';
+        }
+        function displaymouse()
+        {
+            let x=document.getElementById('mouse');
+            x.style.display='block';
+            let laptop=document.getElementsByClassName('laptop-disp');
+            for(let i=0;i<laptop.length;i++)
+            {
+                laptop[i].style.display='none';
+            }  
+            document.getElementById('laptop').style.display='none';
+            document.getElementById('keyboard').style.display='none';
+        }
+        function increasestock()
+        {
+            stock=1;
+            document.getElementById('noofstock').innerHTML=stock;
+        }
+    </script>
+    <!---JAVASCRIPT ENDS-->
+</body>
+</html>

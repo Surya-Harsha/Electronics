@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-LECTRONICS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="main-heading">Welcome to E-LECTRONICS </h1>
+            <p class="motto">--------------------We are an e-commerce organization helping public to buy their desired electronic items at a lower price-----------------------</p>
+        </div>
+        <button class="btn1" onclick="displayadmin()" style="width:auto;">Login as Admin</button>
+        <button class="btn2" onclick="displaycusto()" style="width:auto;">Login as Customer</button>        
+    </div> 
+    <div  id="loginadmin" class="login-box">
+        <button class="btn4" onclick="closelogin()">&#x2716;</button> 
+         <form action="admin.php" method="post">
+            <p style="margin-left:60px;">Enter your details to login</p>
+            <div class="username">
+             <p>Username</p>
+             <input class="inp" type="text" name="username" placeholder="Enter your user id">
+            </div>
+            <div class="password">
+              <p>Password</p>
+              <input class="inp" type="text" name="password" placeholder="Enter your password">
+            </div>
+            <button class="btn3">Login</button>               
+         </form>         
+    </div>
+    <div  id="logincusto" class="login-box">
+        <button class="btn4" onclick="closelogin()">&#x2716;</button> 
+        <form action="customer.php" method="post" class="loginform">
+            <p style="margin-left:60px;">Enter your details to login</p>  
+            <div class="username">
+               <p>Username</p>
+               <input class="inp" type="text" placeholder="Enter your user id">
+           </div>
+           <div class="password">
+               <p>Password</p>
+               <input class="inp" type="text" placeholder="Enter your password">
+           </div> 
+           <button class="btn3">Login</button>
+        </form>
+   </div>
+    <script>
+        function closelogin()
+        {
+            if(document.getElementById('logincusto').style.display='inline-block')
+            {
+                document.getElementById('logincusto').style.display='none';
+            }
+            if(document.getElementById('loginadmin').style.display='inline-block')
+            {
+                document.getElementById('loginadmin').style.display='none';
+            }
+        }
+        function displaycusto()
+        {
+            if(document.getElementById('loginadmin').style.display='inline-block')
+            {
+                document.getElementById('loginadmin').style.display='none';
+            }
+            document.getElementById('logincusto').style.display='inline-block';
+        }       
+        function displayadmin()
+        {
+            if(document.getElementById('logincusto').style.display='inline-block')
+            {
+                document.getElementById('logincusto').style.display='none';
+            }
+            document.getElementById('loginadmin').style.display='inline-block';
+        }                
+    </script>
+</body>
+</html>

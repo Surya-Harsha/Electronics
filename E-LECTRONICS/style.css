@@ -1,0 +1,135 @@
+body
+{
+    background-image: url(bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.header
+{
+
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Russo One', sans-serif;
+    margin-top: 0px;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    top: 0px;
+    height: 100px;
+
+}
+.header h1,p
+{
+    padding-top: 53px;
+}
+
+.btn1
+{
+    margin-top: 300px;
+    padding: 21px;
+    cursor: pointer;
+    border-radius: 100px;
+    margin-left: 490px;
+    transition-duration: 0.15s;
+    background-color: crimson;
+    color: aliceblue;
+    padding-left: 36px;
+    padding-right: 36px;
+    font-weight: bold;
+}
+.btn2
+{
+    margin-top: 100px;
+    padding: 21px;
+    cursor:pointer;
+    border-radius: 100px;
+    margin-left: 190px;
+    transition-duration: 0.15s ;
+    background-color: rgb(94, 143, 138);
+    color: aliceblue;
+    font-weight: bold;
+}
+.btn1:hover
+{
+    opacity: 0.9;
+    box-shadow: 0px 0px 10px rgba(253, 116, 253 , 0.5);
+}
+.btn2:hover
+{
+    opacity: 0.9;
+    box-shadow: 0px 0px 10px rgba(253, 116, 253 , 0.5);
+}
+.login-box
+{
+  display: none; /* Hidden by default */
+  font-family: Arial, sans-serif;
+  background-color: rgba(175, 79, 138, 0.8);
+  position: absolute;
+  top: 50%;
+  left: 27%;
+  border-radius: 20px;
+  height: 600px;
+  width: 600px;
+  margin-top: 40px;
+  margin-left: 50px;
+  padding: 0px;
+}
+.login-box p
+{
+    color:aliceblue;
+}
+.username
+{
+    margin-left: 60px;
+}
+.password
+{
+    margin-left: 60px;
+}
+.inp
+{
+    display: inline-block;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;   
+    height: 35px;
+    margin-top: 10px;
+}
+.btn3
+{
+    margin-top: 80px;
+    cursor:pointer;
+    border-radius: 15px;
+    width: 100px;
+    margin-left: 60px;
+    transition-duration: 0.15s ;
+    background-color: rgb(89, 43, 102);
+    color: aliceblue;
+    font-weight: bold;
+    height: 50px;
+    
+}
+.btn3:hover
+{
+    opacity: 0.9;
+    box-shadow: 0px 0px 10px rgba(169, 152, 152, 0.5);
+}
+.btn4
+{
+    cursor:pointer;
+    border-radius: 100px;
+    width: 30px;
+    transition-duration: 0.15s ;
+    background-color: rgb(89, 43, 102);
+    color: aliceblue;
+    font-weight: bold;
+    height: 30px;
+    margin-right: 20px;
+    float:right;
+    margin-top: 15px;
+}
+.btn4:hover
+{
+    opacity: 0.9;
+    box-shadow: 0px 0px 10px rgba(169, 152, 152, 0.5);
+}
